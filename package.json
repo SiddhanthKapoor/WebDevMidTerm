@@ -5,14 +5,14 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon app.js" 
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SiddhanthKapoor/WebDevMidTerm.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["weather", "web", "express", "node", "API"],
+  "author": "Siddhanth Kapoor",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/SiddhanthKapoor/WebDevMidTerm/issues"
@@ -22,5 +22,8 @@
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "node-fetch": "^2.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
   }
 }
