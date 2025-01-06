@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="Images/Icon.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img
+          id="logo"
+          height="70px"
+          src="Images/Weather Forecast.png"
+          alt="Logo"
+        />
+        <div class="time">
+          <h1 id="time"></h1>
+          <div class="am">
+            <h3 id="ampm"></h3>
+            <h3>Time</h3>
+          </div>
+        </div>
+        <input
+          type="text"
+          autocomplete="off"
+          name="q"
+          placeholder="e.g. Bangalore"
+          spellcheck="false"
+          id="search"
+        />
+        <div class="date">
+          <h1 id="date"></h1>
+          <div class="year">
+            <h3>2024</h3>
+            <h3>Date</h3>
+          </div>
+        </div>
+        <div class="user">
+          <img id="user" height="40px" src="Images/User.png" alt="User" />
+          <div class="am">
+            <h3>Hello ,</h3>
+            <h3>User !</h3>
+          </div>
+        </div>
+      </header>
+
+
+      
+      <div class="weathercontain">
+        <div class="description">
+            <h1 id="d">Cloudy</h1>
+            <div class="box">
+                <h3 id="longdescription">Clouds</h3>
+                <h3 id="maxtemp">Max Temp: 40°C</h3>
+            <h3 id="mintemp">Min Temp: 12°C</h3>
+            <h2 id="cityname">Bengaluru</h2>
+            </div>
+        </div>
+        <div class="temperature">
+          <h1 id="finaltemp">27°C</h1>
+          <div class="box">
+            <h3 id="feelslike">Feels Like: 30°C</h3>
+            <h3 id="humidity">Humidity: 91%</h3>
+            <h3 id="wind">Wind : 5.25 m/s</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
